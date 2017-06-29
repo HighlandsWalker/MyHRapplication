@@ -1,0 +1,20 @@
+<!--<li class="dropdown" ng-controller="MenuController">-->
+    <!--<a href="" class="dropdown-toggle" data-toggle="dropdown">Demo actions<span class="caret"></span></a>-->
+    <!--<ul class="dropdown-menu" role="menu">-->
+        <!--<li ng-repeat="action in employeesList">-->
+            <!--<a href="{{action.url}}">{{action.firstName}} {{action.lastName}}</a>-->
+        <!--</li>-->
+    <!--</ul>-->
+<!--</li>-->
+
+<div class="dropdown" ng-controller="MenuController">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Dropdown
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li ng-repeat="action in employeesList">
+            <a href="{{action.url}}">{{action.firstName}} {{action.lastName}}</a>
+        </li>
+    </ul>
+</div>
